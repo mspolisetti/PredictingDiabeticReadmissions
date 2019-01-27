@@ -1,4 +1,4 @@
-# PredictingDiabeticReadmissions
+# Predicting 30-Day Diabetic Patient Readmissions
 # Goal/Purpose: 
 Build models predicting 30-day Hospital readmissions and identified key factors that affect readmission risk.
 
