@@ -74,6 +74,11 @@ Our choice of models is governed primarily by our aim to understand the most imp
 
 1. Logistic regression: With the starting assumption that the impact of factors and their interactions can be modeled as a log likelihood of outcome, logistic regression can help us understand the relative impact and statistical significance of each factor on the probability of readmission.
 
-2. Decision Trees: By iteratively and hierarchically observing the level of certainty of predicting whether someone would be readmitted or not, we find the relative importance of different factors using a more human-like decision making strategy in establishing this determination.
+2. Random Forests: By considering more than one decision tree and then doing a majority voting, random forests helped in being more robust predictive representations than trees as in the previous case. 
 
-3. Random Forests: By considering more than one decision tree and then doing a majority voting, random forests helped in being more robust predictive representations than trees as in the previous case. 
+#### Comparing model performance
+RandomForests and Logistic regression(s) gave 70% accuracy. Besides accuracy, recall is important here since hospitals get penalized and incur additional costs both for the patient and the insurance agencies if a patient expected not to be readmitted shows up in 30 days.
+
+### Most Important Factors
+
+Our Random forest indicates highest importance of num of lab procedures and number of medications used. Logistic regression model suggests number of inpatient days and discharge disposition are key factors for the prediction.
